@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list li {
+            display: inline;
+            list-style-type: none;
+            padding-left: 6.5mm;
+            padding-right: 6.5mm;
+             
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: rgb(22, 135, 241);
+            font-size: 35px;
+            
+        }
+
+        .list li a:hover {
+            background: rgb(5, 1, 1);
+            color: white;
+            
+        }
+
+        .header {
+            background-image: url(photo1.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            border-bottom: 3px solid darkblue;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .list {
+            padding-top: 2.5%;
+            padding-right: 1.5%;
+        }
+
+        .header1 img {
+            width: 2cm;
+            height: 2cm;
+            float: left;
+            padding-left: 40%;
+            padding-top: 25%;
+        }
+
+        .layout1 {
+            background-color: rgb(146, 233, 241);
+            
+        }
+
+        .heading1 {
+            text-align: center;
+            background-color:  rgb(65, 65, 84);
+            margin-left: 10cm;
+            margin-right: 10cm;
+            color: white;
+        }
+
+        table {
+            text-align: center;
+            
+           
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding-left: 1cm;
+            text-align: center;
+        }
+
+        .heading2 {
+            text-align: center;
+            background-color: rgb(65, 65, 84);
+            margin-left: 10cm;
+            margin-right: 10cm;
+            color: white;
+        }
+        .l1 h1{
+            text-align: center;
+        }
+        .footer{
+           display: flex;
+           justify-content: space-between;
+           padding-left: 40mm;
+           padding-right: 40mm;
+           list-style: none;
+           text-decoration: none;
+           background-color: darkgrey;
+       }
+       .text10{
+           text-align: center;
+           padding-left: 4mm;
+           padding-right: 4mm;
+       }
+      .footer li a{
+           text-decoration: none;
+           color: blue;
+          
+       }
+       .footer a:hover{
+           color: red;
+           letter-spacing: 0.4ch;
+       }
+        #grid1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 8px;
+            height: 13cm;
+            padding: 10px;
+           
+        }
+
+        #grid1>div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 25px;
+            
+        }
+
+        .item {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            width: 12cm;
+            height: 7cm;
+            text-align: center;
+        }
+
+        .item::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background: inherit;
+            background-color: rgb(237, 247, 89);
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            width: 150mm;
+            height: 150mm;
+            transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+            transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .item1 {
+            display: block;
+            position: relative;
+            margin-left: 1cm;
+           
+        }
+
+        .item1 img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100mm;
+            height: 60mm;
+            line-height: 0;
+        }
+
+
+        .itemtext {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            text-align: center;
+            z-index: 1;
+            color: rgb(140, 167, 203);
+            transform: translateX(-20%);
+            transition-delay: 300ms;
+        }
+
+        .item:hover::after {
+            transform: scale(2) translateX(0%) translateY(0%) rotate(-28deg);
+        }
+
+        .item:hover .item1 {
+            transform: scale(1.2);
+            transition: all 1s;
+        }
+
+        .item:hover .itemtext {
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+
+        .text1 {
+
+
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            color: black;
+            font-size: 2rem;
+            padding: 0 1rem;
+            margin: 5px 0 0 0;
+
+        }
+        .space{
+            background-color: white;
+            height: 10cm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+    
+        <div class="header1">
+            <img src="logo.png" alt="logo">
+        </div>
+    
+        <div class="list">
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="activity.html"> Activity</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="grid1">
+    
+        <div class="item">
+            <div class="item1"> <img src="1.jpg" alt=""></div>
+    
+            <div class="itemtext">
+                <h4 class="text1"> certificate</h4>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item1"> <img src="2.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item1"> <img src="3.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item1"> <img src="4.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item1"> <img src="5.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item1"> <img src="6.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item1"> <img src="7.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+    
+        <div class="item">
+            <div class="item1"> <img src="8.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item1"> <img src="9.jpg" alt=""></div>
+            <div class="itemtext">
+                <h4 class="text1"> certificate </h4>
+            </div>
+        </div>
+    
+    </div>
+    <div class="space">
+
+    </div>
+    <div class="layout1">
+        <br>
+        <div class="l1">
+            <div>
+                <h1>MY ACTIVITY</h1>
+            </div>
+            <div class="underline">
+
+            </div>
+        </div><br><br>
+        <div class="heading1">
+            <h2>TECHNICAL/RESEARCH SKILL</h2>
+        </div><br>
+        <table>
+            <tr>
+                <th>
+                    Row Number
+                </th>
+                <th>
+                    Major Catagory
+                </th>
+                <th>
+                    Activity
+                </th>
+                <th>
+                    Level
+                </th>
+                <th>
+                    Event Date
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Technical/Research skill</td>
+                <td>Student skill development</td>
+                <td>Inter-college</td>
+                <td>21/09/2021</td>
+                <td>I DID COURSE ON A DIPLOMA IN MULTILINGUAL COMPUTER PROGRAMMING.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Technical/Research skill</td>
+                <td>Workshop</td>
+                <td>Inter-collegee</td>
+                <td>01/09/2021</td>
+                <td>I ATTEND A WORKSHOP ON CAREER GUIDANCE AT I.C.E. GATE EDUCATION PRIVATE LIMITED.</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Technical/Research skill</td>
+                <td>Techfest</td>
+                <td>Inter-collegee</td>
+                <td>28/10/2021</td>
+                <td>I SECURED A RANK 3 IN EXPEDITION 2.0 EVENT IN E-TECHFEST ORGANISED BY SILVER OAK UNIVERSITY.</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Technical/Research skill</td>
+                <td>Workshop</td>
+                <td>Inter-collegee</td>
+                <td>25/09/2021</td>
+                <td>I ATTEND A WEBINAR ON QUOTDIGITAL TRANSFORMATION FUNDAMENTALS.</td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Technical/Research skill</td>
+                <td>Student skill development</td>
+                <td>Inter-collegee</td>
+                <td>10/09/2021</td>
+                <td>I HAS PARTICIPATED IN ONLINE NATIONAL LEVEL QUIZ ON PYTHON PROGRAMMING.</td>
+
+            </tr>
+        </table><br><br><br>
+        <div class="heading2">
+            <h2>Sports and cultural</h2>
+        </div><br>
+        <table>
+            <tr>
+                <th>
+                    Row Number
+                </th>
+                <th>
+                    Major Catagory
+                </th>
+                <th>
+                    Activity
+                </th>
+                <th>
+                    Level
+                </th>
+                <th>
+                    Event Date
+                </th>
+                <th>
+                    Description
+                </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sports and Cultural</td>
+                <td>Cultural</td>
+                <td>College level</td>
+                <td>22/02/2020</td>
+                <td>I TOOK PART IN JUNOON 2020 OF SILVER OAK UNIVERSITY.I TOOK PART IN JUNOON 2020 OF SILVER OAK
+                    UNIVERSITY.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sports and Cultural</td>
+                <td>Sports</td>
+                <td>Inter-college</td>
+                <td>10/09/2020</td>
+                <td>I TOOK PART IN ONLINE TEST THAT EVALUATES GENERAL KNOWLEDGE AWARENESS.I TOOK PART IN ONLINE TEST
+                    THAT EVALUATES GENERAL KNOWLEDGE AWARENESS.</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sports and Cultural</td>
+                <td>Cultural</td>
+                <td>Inter-college</td>
+                <td>15/05/2021</td>
+                <td>THERE WAS A TALAASH IN SILVER OAK UNIVERSITY IN 2019.THERE WAS A TALAASH IN SILVER OAK UNIVERSITY IN
+                    2019.</td>
+            </tr>
+        </table><br>
+    </div>
+<div class="footer">
+
+    <div class="text10"> <br><br><br>
+        <h1><u>ADDRESS</u></h1>
+        <br>
+        <p>"Nandalay" Nr.Rabari Kanya Chhatralay </p>
+        <p>Ramnagar Society, Gopalpara, Ranavav,</p>
+        <p>Porbandar-360550</p>
+
+    </div>
+
+    <div><br><br><br>
+        <h1><u>NAVIGATE</u></h1>
+        <br>
+        <li><a href="index1.html">Home</a></li><br>
+        <li><a href="about.html"> About</a></li><br>
+        <li><a href="activity.html"> Activity</a></li><br>
+        <li><a href="blog.html">Blog</a></li><br>
+        <li><a href="project.html">Projects</a></li><br>
+        <li><a href="contact.html">Contact</a></li><br>
+        <br><br>
+        <br><br>
+        <br><br><br>
+        <h4>Copyright@2022 Reserved></h4>
+        <br><br>
+    </div>
+
+    <div><br><br><br>
+        <h1><u>FOLLOW ME</u></h1>
+        <br>
+        <a href="https://www.facebook.com/bansi.parsania.1" target="blank"><i class="fa-brands fa-facebook fa-2x"
+                style="color: black;"></i></a>
+        <a href="https://www.instagram.com/invites/contact/?i=17m489e8d2m07&utm_content=nmub7wu" target="blank"><i
+                class="fa-brands fa-instagram-square fa-2x" style="color: black;"></i></a>
+        <a href="https://www.linkedin.com/in/bansi-parsania-4223441b1" target="blank"><i
+                class="fa-brands fa-linkedin fa-2x" style="color: black;"></i></a>
+        <br>
+        <br>
+        <i class="fa-solid fa-envelope fa-2x"></i>
+        <br>
+        <h2>Email</h2>
+
+        bansiparsania1352@gmail.com
+        <br>
+        <br>
+        <i class="fa-solid fa-phone fa-2x"></i>
+        <br>
+        <h2>Phone</h2>
+
+        +91-9328569878
+
+        <br><br><br>
+    </div>
+
+    <br><br><br>
+</div>
+</body>
+
+</html>

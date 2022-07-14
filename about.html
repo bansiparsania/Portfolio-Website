@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list li {
+            display: inline;
+            list-style-type: none;
+            padding-left: 6.5mm;
+            padding-right: 6.5mm;
+             
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: rgb(22, 135, 241);
+            font-size: 35px;
+            
+        }
+
+        .list li a:hover {
+            background: rgb(5, 1, 1);
+            color: white;
+            
+        }
+
+        .header {
+            background-image: url(photo1.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            border-bottom: 3px solid darkblue;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .list {
+            padding-top: 2.5%;
+            padding-right: 1.5%;
+        }
+
+        .header1 img {
+            width: 2cm;
+            height: 2cm;
+            float: left;
+            padding-left: 40%;
+            padding-top: 45%;
+        }
+        .text{
+            text-align: center;
+        }
+       .text1{
+           text-align: center;
+           font-size: larger;
+           color: darkorange;
+       }
+       .progress{
+         overflow: hidden;
+         background-color: white;
+         height: 15px;
+         border-radius: 6px;
+         margin-right: 30mm;
+         margin-left: 30mm;
+       }
+       .progressfill{
+        height: 15px;
+        width: 0%;
+        overflow: hidden;
+        background-color: darkblue;
+        animation-timing-function: ease 3s;
+        animation-name: box1;
+        animation-fill-mode: forwards;
+        border-radius: 6px;
+        position: relative;
+        animation-duration: 4s;
+       }
+       @keyframes box1{
+         from{
+            width: 0%;
+         }
+         to{
+            width: 95%;
+         }
+       }
+        .progressfill1{
+        height: 15px;
+        width: 0%;
+        overflow: hidden;
+        background-color: darkblue;
+        animation-timing-function: ease 3s;
+        animation-name: box2;
+        animation-fill-mode: forwards;
+        border-radius: 6px;
+        position: relative;
+        animation-duration: 4s;
+       }
+       @keyframes box2{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 85%;
+        }
+       }
+        .progressfill2{
+        height: 15px;
+        width: 0%;
+        overflow: hidden;
+        background-color: darkblue;
+        animation-timing-function: ease 3s;
+        animation-name: box3;
+        animation-fill-mode: forwards;
+        border-radius: 6px;
+        position: relative;
+        animation-duration: 4s;
+       }
+       @keyframes box3{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 80%;
+        }
+       }
+        .progressfill3{
+        height: 15px;
+        width: 0%;
+        overflow: hidden;
+        background-color: darkblue;
+        animation-timing-function: ease 3s;
+        animation-name: box4;
+        animation-fill-mode: forwards;
+        border-radius: 6px;
+        position: relative;
+        animation-duration: 4s;
+       }
+       @keyframes box4{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 90%;
+        }
+       }
+        .progressfill4{
+        height: 15px;
+        width: 0%;
+        overflow: hidden;
+        background-color: darkblue;
+        animation-timing-function: ease 3s;
+        animation-name: box5;
+        animation-fill-mode: forwards;
+        border-radius: 6px;
+        position: relative;
+        animation-duration: 4s;
+       }
+       @keyframes box5{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 70%;
+        }
+       }
+        .progressfill5{
+        height: 15px;
+        width: 0%;
+        overflow: hidden;
+        background-color: darkblue;
+        animation-timing-function: ease 3s;
+        animation-name: box6;
+        animation-fill-mode: forwards;
+        border-radius: 6px;
+        position: relative;
+        animation-duration: 4s;
+       }
+       @keyframes box6{
+        from{
+            width: 0%;
+        }
+        to{
+            width: 77%;
+        }
+       }
+       .text2{
+           text-align: center;
+           font-size: 6mm;
+       }
+       .text3{
+           display: flex;
+           justify-content: space-between;
+           padding-left: 55mm;
+           padding-right: 30mm;
+       }
+       
+       .para{
+           text-align: center;
+           padding-left: 14mm;
+           padding-right: 4mm;
+           border-left: 3px solid darkorange;
+           
+       }
+       .text4{
+           display: flex;
+           justify-content: space-between;
+           padding-left: 25mm;
+           padding-right: 25mm;
+           text-align: center;
+       }
+       .text5{
+           background-color: lightskyblue;
+       }
+       p{
+           padding-left: 5mm;
+           padding-right: 5mm;
+       }
+       
+       .text5 li{
+           text-decoration: none;
+           padding-left: 30mm;
+       }
+       .text6{
+         text-align: left;
+         padding-left: 25mm;
+       }
+       .text6 p{
+          font-size: 6mm;
+       }
+       .text7{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25mm;
+        padding-right: 25mm;
+        
+       }
+       .text8{
+         border:1px solid darkgrey;
+         padding-left: 1mm;
+         padding-right: 3mm;
+         margin-right: 5mm;
+         border-radius: 5%;
+       }
+       .text9{
+        display: flex;
+        justify-content: space-between;
+        background-color: goldenrod;
+        text-align: center;
+        padding-left: 12cm;
+        padding-right: 12cm;
+       }
+       .text9 h3{
+          color: white;
+       }
+       .text9 h2{
+        color: white;
+       }
+       .footer{
+           display: flex;
+           justify-content: space-between;
+           padding-left: 40mm;
+           padding-right: 40mm;
+           list-style: none;
+           text-decoration: none;
+           background-color: darkgrey;
+       }
+       .text10{
+           text-align: center;
+           padding-left: 4mm;
+           padding-right: 4mm;
+       }
+      .footer li a{
+           text-decoration: none;
+           color: blue;
+          
+       }
+       .footer a:hover{
+           color: red;
+           letter-spacing: 0.4ch;
+       }
+       .text11{
+        display: flex;
+        justify-content: space-between;
+         padding-left: 25mm;
+         padding-right: 63mm;
+         text-align: left;
+
+       }
+       .text11 img{
+           border-radius: 50%;
+           height: 1.5cm;
+           width: 1.5cm;
+       }
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <div class="header1">
+            <img src="logo.png" alt="logo">
+        </div>
+    
+        <div class="list">
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="activity.html"> Activity</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+            </ul>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="text">
+            <h1>ABOUT ME</h1>
+        </div>
+        
+        <div class="text1">
+            <b>___________</b>
+        </div>
+        <br>
+        
+        <div class="text2">
+            <p>Let me tell you a little about myself and what I do</p>
+        </div>
+        <br>
+        <br>
+        <br>
+       <div class="text3">
+           <div class="img">
+               <img src="pic.jpg" alt="pic">
+         
+           </div>
+
+           <div class="para">
+                 <br><br><br><br>
+                 <br>
+                 <h3>YOUR PROJECT IS IN SAFE HANDS</h3>
+                 <br>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Veritatis, laboriosam soluta enim neque voluptas, voluptatem,</p>
+                 <p> rem labore illum odio totam magni corporis nihil quisquam.Non, modi! Nesciunt veritatis quos praesentium?</p>
+           </div>
+       </div>
+    <br>
+    <br>
+    <br>
+       <div class="text4">
+           <br>
+           
+           <div >
+                <br>
+                <i class="fa-solid fa-award fa-3x" style="color: goldenrod;"></i>
+                <br><br>
+                <h2>Award One</h2>
+                <br>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, doloribus?</P>
+                <br>
+           </div>
+           <div>
+                <br>
+                <i class="fa-solid fa-award fa-3x" style="color: goldenrod;"></i>
+                <br><br>
+                <h2>Award Two</h2>
+                <br>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, doloribus?</P>
+                <br>
+           </div>
+           <div>
+                <br>
+                <i class="fa-solid fa-award fa-3x" style="color: goldenrod;"></i>
+                <br><br>
+                <h2>Award Three</h2>
+                <br>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, doloribus?</P>
+                <br>
+           </div>
+       </div>
+       <br>
+       <br>
+       <br>
+       <div class="text5">
+           <br>
+           <br>
+           <div class="text">
+                <h1>TECHNICAL SKILLS</h1>
+           </div>
+           <div class="text1">
+            <b>___________</b>
+           </div>
+           <br>
+           <ul>
+           <li><b>HTML:</b></li><br>
+           <div class="progress">
+                <div class="progressfill">
+
+                </div>
+           </div>
+           <li><b>CSS:</b></li><br>
+            <div class="progress">
+                <div class="progressfill1">
+            
+                </div>
+            </div>
+           <li><b>BOOTSTRAP:</b></li><br>
+        <div class="progress">
+            <div class="progressfill2">
+        
+            </div>
+        </div>
+           <li><b>SASS:</b></li><br>
+        <div class="progress">
+            <div class="progressfill3">
+        
+            </div>
+        </div>
+           <li><b>JAVASCRIPT:</b></li><br>
+        <div class="progress">
+            <div class="progressfill4">
+        
+            </div>
+        </div>
+           <li><b>REACTJs:</b></li><br>
+        <div class="progress">
+            <div class="progressfill5">
+        
+            </div>
+        </div>
+        </ul>
+        <br>
+        <br>
+       </div>
+       <br>
+       <br>
+       <br>
+
+        <div class="text">
+            <h1>TESTIMONIALS</h1>
+        </div>
+        <div class="text1">
+            <b>___________</b>
+        </div>
+        <br>
+        <br>
+
+        <div class="text6">
+            <p>
+                Take a look at what people say about me
+            </p>
+        </div>
+        <br>
+        
+        <div class="text7">
+            <div class="text8"><br>
+                 <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam officia hic optio neque voluptatibus deserunt? Illo,
+                    ullam aperiam ipsum voluptate, quibusdam non dignissimos laudantium totam quasi sunt itaque eum perspiciatis.
+                 </p><br>
+            </div>
+            
+            <div class="text8"><br>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam officia hic optio neque voluptatibus deserunt?
+                    Illo,
+                    ullam aperiam ipsum voluptate, quibusdam non dignissimos laudantium totam quasi sunt itaque eum perspiciatis.
+                </p><br>
+            </div>
+
+            <div class="text8"><br>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam officia hic optio neque voluptatibus deserunt?
+                    Illo,
+                    ullam aperiam ipsum voluptate, quibusdam non dignissimos laudantium totam quasi sunt itaque eum perspiciatis.
+                </p><br>
+            </div>
+
+            <div class="text8"><br>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam officia hic optio neque voluptatibus deserunt?
+                    Illo,
+                    ullam aperiam ipsum voluptate, quibusdam non dignissimos laudantium totam quasi sunt itaque eum perspiciatis.
+                </p><br>
+            </div>
+        </div>
+        <br>
+        
+        <div class="text11">
+            <div>
+                <img src="person1.jpg"><b>Parth,Ahmedabad</b>
+            </div>
+            <div>
+                <img src="person2.jpg"><b>Bansi,Porbandar</b>
+            </div>
+            <div>
+                <img src="person3.jpg"><b>Darsh,Himatnagar</b>
+            </div>
+            <div>
+                <img src="person4.jpg"><b>Pooja,Bhavnagar</b>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="text9">
+           
+            <div>
+                <br>
+                <i class="fa-brands fa-twitter fa-4x" style="color: white;"></i>
+                <br><br>
+                <h2>100</h2>
+                <br>
+                <h3>Twitter Followers</h3>
+                <br>
+                <br>
+            </div>
+            <div>
+                <br>
+                <i class="fa-brands fa-youtube fa-4x" style="color: white;"></i>
+                <br><br>
+                <h2>370</h2>
+                <br>
+                <h3>Youtube Subscribers</h3>
+                <br>
+                <br>
+            </div>
+            <div>
+                <br>
+                <i class="fa-brands fa-facebook fa-4x" style="color: white;"></i>
+                <br><br>
+                <h2>550</h2>
+                <br>
+                <h3>Facebook Fans</h3>
+                <br>
+                <br>
+            </div>
+        </div>
+    <div class="footer">
+    
+        <div class="text10"> <br><br><br>
+            <h1><u>ADDRESS</u></h1>
+            <br>
+            <p>"Nandalay" Nr.Rabari Kanya Chhatralay </p>
+            <p>Ramnagar Society, Gopalpara, Ranavav,</p>
+            <p>Porbandar-360550</p>
+    
+        </div>
+    
+        <div><br><br><br>
+            <h1><u>NAVIGATE</u></h1>
+            <br>
+            <li><a href="index1.html">Home</a></li><br>
+            <li><a href="about.html"> About</a></li><br>
+            <li><a href="activity.html"> Activity</a></li><br>
+            <li><a href="blog.html">Blog</a></li><br>
+            <li><a href="project.html">Projects</a></li><br>
+            <li><a href="contact.html">Contact</a></li><br>
+            <br><br>
+            <br><br>
+            <br><br><br>
+            <h4>Copyright@2022 Reserved></h4>
+            <br><br>
+        </div>
+    
+        <div><br><br><br>
+            <h1><u>FOLLOW ME</u></h1>
+            <br>
+            <a href="https://www.facebook.com/bansi.parsania.1" target="blank"><i
+                    class="fa-brands fa-facebook fa-2x" style="color: black;"></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=17m489e8d2m07&utm_content=nmub7wu" target="blank"><i
+                    class="fa-brands fa-instagram-square fa-2x" style="color: black;"></i></a>
+            <a href="https://www.linkedin.com/in/bansi-parsania-4223441b1" target="blank"><i
+                    class="fa-brands fa-linkedin fa-2x" style="color: black;"></i></a>
+            <br>
+            <br>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <br>
+            <h2>Email</h2>
+    
+            bansiparsania1352@gmail.com
+            <br>
+            <br>
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <br>
+            <h2>Phone</h2>
+    
+            +91-9328569878
+    
+            <br><br><br>
+        </div>
+    
+        <br><br><br>
+    </div>
+</body>
+</html>

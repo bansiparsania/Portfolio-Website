@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .list li {
+            display: inline;
+            list-style-type: none;
+
+
+        }
+
+        .list li a {
+            text-decoration: none;
+            color: rgb(10, 10, 75);
+            font-size: 25px;
+            font-weight: 500;
+            font-style: normal;
+            padding: 10px 20px;
+            transition: 1s;
+
+        }
+
+        .list li a:hover {
+            background: white;
+            color: rgb(108, 108, 219);
+            letter-spacing: 0.1em;
+        }
+
+        .header {
+            background-image: url(photo1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-bottom: 3px solid rgb(10, 10, 75);
+            position: relative;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .list {
+            padding-top: 2%;
+            padding-right: 1%;
+            color: rgb(10, 10, 75);
+        }
+
+        .header1 img {
+            width: 2cm;
+            height: 2cm;
+            float: left;
+            padding-left: 25%;
+            padding-top: 15%;
+
+        }
+        
+        .layout1 {
+            background-color: rgb(186, 186, 229);
+            height: 350px;
+
+        }
+
+        .layout1 p {
+            font-size: 2cm;
+        }
+
+
+        .layout11 {
+            text-align: center;
+            padding-top: 38mm;
+            font-size: 2cm;
+            font-weight: bolder;
+        }
+          h2 {
+  font-size: 2rem;
+  line-height: 5rem;
+  color: rgb(11, 11, 11);
+  margin-left: 1rem;
+}
+/* .container1 h5 {
+  background: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
+    no-repeat center center/cover;
+  padding: 200px;
+  text-align: center;
+  font-size: 5rem;
+  opacity: 0.8;
+} */
+.pname1 .images{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 1cm;
+     text-align: center;
+}
+.pname1 .images img{
+    height: 12cm;
+    width: 10cm;
+    
+}
+.pname1 .images1{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 1cm;
+     text-align: center;
+}
+.pname2 .images1 img{
+    height: 12cm;
+    width: 11cm;
+    
+}
+.pname1 .images1{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 1cm;
+     text-align: center;
+}
+.pname3 .images2 img{
+    height: 13cm;
+    width: 33cm;
+    
+}
+
+.l1 h1{
+   text-align: center;
+   padding-top: 2cm;
+   color: crimson;
+}
+.projectname h1{
+    padding-top: 1cm;
+    color: darkblue;
+}
+.images{
+     padding-left: 3cm;
+}
+.images1{
+    padding-left: 3cm ;
+}
+.images2{
+    padding-left: 3cm;
+}
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 60mm;
+            padding-right: 60mm;
+            list-style: none;
+            text-align: left;
+            background-color: rgb(107, 109, 111);
+        }
+
+        .footer li a {
+            text-decoration: none;
+            transition: 1s;
+        }
+
+        .footer li a:hover {
+            letter-spacing: 0.1em;
+            font-size: 5mm;
+
+        }
+
+        .text6 {
+            text-align: center;
+        }
+
+        .text6 p {
+            color: black;
+            ;
+
+        }
+
+        .footer a {
+            color: rgb(10, 10, 75);
+
+        }
+
+        .footer a:hover {
+            letter-spacing: 0.2em;
+
+        }
+
+        .text7 a {
+            color: rgb(10, 10, 75);
+            
+        }
+
+        .text7 a:hover {
+
+            font-size: 5mm;
+
+        }
+
+        .text7 b {
+            color: rgb(10, 10, 75);
+        }
+
+        .icons {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+
+            line-height: 70px;
+        }
+
+        .icons:hover {
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            background-color: black;
+            line-height: 90px;
+            transition: all 1s;
+        }
+
+
+        
+
+        h2 {
+            font-size: 2rem;
+            line-height: 3rem;
+            color: black;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="header1">
+
+            <img src="logo.png" alt="logo1">
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Gallery</a>
+                </li>
+                <li>
+                    <a href="project.html"> Project</a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="l1">
+        <div class="l11">
+            <h1>My Project</h1>
+        </div>
+    </div>
+    <div class="projectname">
+        <div class="pname1">
+            <h1>&nbsp;(1)Restaurant Website</h1>
+            <br>
+            <br>
+            <div class="images">
+                <img src="index.jpeg" alt="">
+                <img src="about.jpeg" alt="">
+                <img src="blog.jpeg" alt="">
+                <img src="order.jpeg" alt="">
+                <img src="menu.jpeg" alt="">
+                <img src="contact.png" alt="">
+            </div>
+        </div>
+        <br><br>
+        <div class="pname2">
+            <h1>&nbsp;(2)Moving circle</h1>
+            <br><br>
+            <div class="images1">
+                <img src="2.jpeg" alt="">
+                <img src="3.jpeg" alt="">
+                
+            </div>
+        </div>
+        <br><br>
+        <div class="pname3">
+            <h1>&nbsp;(3)Moving Line</h1>
+            <br><br>
+            <div class="images2">
+                <img src="line.jpeg" alt="">
+            </div>
+        </div>
+    
+    </div>
+    <div class="footer">
+        <div class="text6"><br><br>
+            <h1><u>Company</u></h1>
+            <br>
+            <p>20, Tirupati Bunglows, Gayatrimandir Road,</p>
+            <p>Mahavirnagar,Himatnagar,</p>
+            <p>Gujarat,383001</p>
+        </div>
+        <div><br><br>
+            <h1><u>Navigate</u></h1>
+            <br>
+
+            <li>
+                <a href="index1.html">Home</a>
+            </li>
+            <br>
+            <li>
+                <a href="about.html"> About</a>
+            </li>
+            <br>
+            <li>
+                <a href="activity.html"> Activities</a>
+            </li>
+            <br>
+            <li>
+                <a href="blog.html">Blog </a>
+            </li>
+            <br>
+            <li>
+                <a href="project.html"> Project</a>
+            </li>
+            <br>
+            <li>
+                <a href="contact.html"> Contact</a>
+            </li>
+            <br><br><br><br><br>
+            <b>Copyright © 2022 Reserved</b>
+            <br><br>
+        </div>
+        <div class="text7"><br><br>
+            <h1><u>Follow Me</u></h1>
+            <br>
+            <a href="https://www.facebook.com/profile.php?id=100020713541031" target="_blank"><i
+                    class="fa-brands fa-facebook fa-2x"></i></a> <a
+                href="https://www.instagram.com/invites/contact/?i=1t9yw1xjgxvyi&utm_content=2njw795" target="_blank"><i
+                    class="fa-brands fa-instagram-square fa-2x"></i></a> <a
+                href="https://www.linkedin.com/in/parth-patel-09364b198" target="_blank"><i
+                    class="fa-brands fa-linkedin fa-2x"></i></a> <a href="https://twitter.com/Parthpa27108727?s=09"
+                target="_blank"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+            <br><br>
+            <a href="Email.html"> <i class="fa-solid fa-envelope fa-2x"></i></a>
+            <br><br>
+            <b>Gmail:ppd181817@gmail.com</b>
+            <br><br>
+            <a href="phone.html"><i class="fa-solid fa-phone fa-2x"></i></a><br><br>
+            <b>phone:9773056424</b>
+            <br><br>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
